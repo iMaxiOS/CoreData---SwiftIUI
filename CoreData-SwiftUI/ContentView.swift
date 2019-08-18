@@ -43,6 +43,20 @@ struct ContentView: View {
                         }
                     }
                 }.font(.headline)
+                Section(header: Text("To Do`s")) {
+                    ForEach(self.toDoItems) { toDoItem in
+                        ToDoItemView(createAt: toDoItem.createAt!, title: "\(toDoItem.title!)")
+                    }.onDelete { indexSet
+                        let deleteItem = toDoItems[indexSet.first!]
+                        self.managedObjectContext.delete(deleteItem)
+                        
+                        do {
+                            self.managedObjectContext.save()
+                        }catch {
+                            print(error)
+                        }
+                    }
+                }
             }
             .navigationBarTitle(Text("ToDoItem"))
             .navigationBarItems(trailing: EditButton())

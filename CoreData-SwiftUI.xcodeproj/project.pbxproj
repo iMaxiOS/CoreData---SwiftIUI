@@ -15,6 +15,7 @@
 		AC0BF3012305C18D00F7AFA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0BF3002305C18D00F7AFA9 /* Preview Assets.xcassets */; };
 		AC0BF3042305C18D00F7AFA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0BF3022305C18D00F7AFA9 /* LaunchScreen.storyboard */; };
 		ACFC64B72307FD570076DB1E /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC64B62307FD570076DB1E /* ToDoItem.swift */; };
+		ACFC64B9230939990076DB1E /* ToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC64B8230939990076DB1E /* ToDoItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AC0BF3032305C18D00F7AFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC0BF3052305C18D00F7AFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACFC64B62307FD570076DB1E /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		ACFC64B8230939990076DB1E /* ToDoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				AC0BF2F42305C18B00F7AFA9 /* AppDelegate.swift */,
 				AC0BF2F62305C18B00F7AFA9 /* SceneDelegate.swift */,
 				AC0BF2FB2305C18B00F7AFA9 /* ContentView.swift */,
+				ACFC64B8230939990076DB1E /* ToDoItemView.swift */,
 				ACFC64B62307FD570076DB1E /* ToDoItem.swift */,
 				AC0BF2FD2305C18D00F7AFA9 /* Assets.xcassets */,
 				AC0BF3022305C18D00F7AFA9 /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC0BF2FA2305C18B00F7AFA9 /* CoreData_SwiftUI.xcdatamodeld in Sources */,
+				ACFC64B9230939990076DB1E /* ToDoItemView.swift in Sources */,
 				AC0BF2F52305C18B00F7AFA9 /* AppDelegate.swift in Sources */,
 				ACFC64B72307FD570076DB1E /* ToDoItem.swift in Sources */,
 				AC0BF2FC2305C18B00F7AFA9 /* ContentView.swift in Sources */,
