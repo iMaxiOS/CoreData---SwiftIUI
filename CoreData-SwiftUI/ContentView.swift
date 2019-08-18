@@ -23,6 +23,17 @@ struct ContentView: View {
                     HStack {
                         TextField("New item", text: $newToDoItem) {
                             Button(action: {
+                                let toDoItem = ToDoItem(context: self.managedObjectContext)
+                                toDoItem.title = self.newToDoItem
+                                toDoItem.createAt = Date()
+                                
+                                do {
+                                    self.managedObjectContext.save()
+                                } catch {
+                                   print(error)
+                                }
+                                
+                                self.newToDoItem = ""
                                 
                             }) {
                                 Image(systemName: "plus.circle.fill")
