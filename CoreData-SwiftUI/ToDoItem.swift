@@ -9,7 +9,21 @@
 import Foundation
 import CoreData
 
-class ToDoItem: NSManagedObject, Identifiable {
+public class ToDoItem: NSManagedObject, Identifiable {
+    @NSManaged public var createAt: Date?
+    @NSManaged public var title: String?
+}
+
+extension ToDoItem {
     
+    static func getAlltoDpItems() -> NSFetchRequest<ToDoItem> {
+        let request: NSFetchRequest<ToDoItem> = ToDoItem.fetchRequest() as! NSFetchRequest<ToDoItem>
+        
+        let sortDiscription = NSSortDescriptor(key: "createAt", ascending: true)
+        
+        request.sortDescriptors = [sortDiscription]
+        
+        return request
+    }
 }
 
